@@ -1,57 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-</head>
-
 <body>
     <header id="header" class="header d-flex align-items-center sticky-top">
-        <div class="container position-relative d-flex align-items-center justify-content-between">
+        <div class="container position-relative d-flex align-items-center justify-content-between ">
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+            <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
-                <h1 class="sitename">Yummy</h1>
-                <span>.</span>
+                <h1 class="sitename ">Darshan Hotel</h1>
             </a>
 
-            <nav id="navmenu" class="navmenu">
+            <nav id="navmenu" class="navmenu mx-auto">
                 <ul>
-                    <li><a href="#hero" class="active">Home<br></a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#chefs">Chefs</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                    <li><a href="index.php" class="active">Home<br></a></li>
+                    <li><a href="aboutus.php">About</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="index.php#events">Events</a></li>
+                    <li><a href="index.php#chefs">Chefs</a></li>
+                    <li><a href="contactus.php">Contact</a></li>
+                    <li>
+                        <div class="d-flex flex-sm-column gap-3 d-lg-none btn-group-lg px-3">
+                            <a class="btn btn-danger text-white" href="index.php#book-a-table">Book a Table</a>
+                            <a class="btn btn-primary text-white" href="login.php">Login</a>
+                        </div>
             </nav>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </div>
 
-            <a class="btn-getstarted" href="index.html#book-a-table">Book a Table</a>
-
+        <div class="d-none flex gap-3 d-lg-flex px-2  w-25">
+           <a class="btn btn-danger " href="index.php#book-a-table">Book a Table</a>
+            <a class="btn btn-primary" href="login.php">Login</a>
+         
         </div>
     </header>
-</body>
 
-</html>
+</body>

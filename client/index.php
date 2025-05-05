@@ -1,97 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Project</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
-    <!-- Favicons -->
-    <link href="assets/img/logo.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <style>
-        .dark-background {
-            background-color: black;
-            color: white;
-        }
-
-        .light-background {
-            background-color: white;
-            color: black;
-        }
-    </style>
-
-</head>
+<?php include 'tophtml.php'; ?>
 
 <body class="index-page">
-
-    <!-- <header id="header" class="header d-flex align-items-center sticky-top">
-        <div class="container position-relative d-flex align-items-center justify-content-between">
-
-            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-           Uncomment the line below if you also wish to use an image logo 
-                <img src="assets/img/logo.png" alt=""> 
-                <h1 class="sitename">Yummy</h1>
-                <span>.</span>
-            </a>
-
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="#hero" class="active">Home<br></a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#chefs">Chefs</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-
-            <a class="btn-getstarted" href="index.html#book-a-table">Book a Table</a>
-
-        </div>
-    </header> -->
 
     <?php include 'header.php'; ?>
     <main class="main">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section">
+        <section id="hero" class="hero section light-background">
 
             <div class="container">
                 <div class="row gy-4 justify-content-center justify-content-lg-between">
@@ -99,7 +14,7 @@
                         <h1 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
                         <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
                         <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-                            <a href="#book-a-table" class="btn-get-started">Book a Table</a>
+                            <a href="#book-a-table" class="btn-get-started">Booka a Table</a>
                             <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
                         </div>
                     </div>
@@ -114,7 +29,7 @@
 
 
         <!-- Why Us Section -->
-        <section id="why-us" class="why-us section">
+        <section id="why-us" class="why-us section light-background">
 
             <div class="container">
 
@@ -122,10 +37,10 @@
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="why-box">
-                            <h3>Why Choose Darshan Hotel?</h3>
+                            <h3>Why Choose Yummy</h3>
                             <p>
-                                Darshan Restaurant offers a delightful dining experience with a perfect mix of authentic flavors, quality ingredients, and warm hospitality.
-                                Our menu features a variety of freshly prepared dishes to satisfy every palate. With a cozy ambiance and attentive service, it's the ideal spot for family meals or casual dining.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
                             </p>
                             <div class="text-center">
                                 <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
@@ -170,9 +85,9 @@
         </section><!-- /Why Us Section -->
 
         <!-- Stats Section -->
-        <section id="stats" class="stats section ">
+        <section id="stats" class="stats section dark-background">
 
-            <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+            <img src="../assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
 
             <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
 
@@ -215,7 +130,7 @@
 
 
         <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section ">
+        <section id="testimonials" class="testimonials section light-background">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
@@ -261,7 +176,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-2 text-center">
-                                        <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                                        <img src="../assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -285,7 +200,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-2 text-center">
-                                        <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                                        <img src="../assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -309,7 +224,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-2 text-center">
-                                        <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                                        <img src="../assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -333,7 +248,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-2 text-center">
-                                        <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
+                                        <img src="../assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -430,11 +345,13 @@
             </div><!-- End Section Title -->
 
             <div class="container">
+
                 <div class="row gy-4">
+
                     <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div class="team-member">
                             <div class="member-img">
-                                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                                <img src="../assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -453,7 +370,7 @@
                     <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member">
                             <div class="member-img">
-                                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+                                <img src="../assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -472,7 +389,7 @@
                     <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member">
                             <div class="member-img">
-                                <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+                                <img src="../assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -552,7 +469,7 @@
         </section><!-- /Book A Table Section -->
 
         <!-- Gallery Section -->
-        <section id="gallery" class="gallery section ">
+        <section id="gallery" class="gallery section light-background">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
@@ -616,24 +533,4 @@
 
     <?php include 'footer.php'; ?>
 
-
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-    <!-- Preloader -->
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+    <?php include 'endhtml.php'; ?>
