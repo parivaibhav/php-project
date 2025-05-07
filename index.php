@@ -26,21 +26,14 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <style>
-        .dark-background {
-            background-color: black;
-            color: white;
-        }
 
-        .light-background {
-            background-color: white;
-            color: black;
-        }
-    </style>
+
+    <script src="assets/js/modetoggle.js" defer></script>
+
 
 </head>
 
-<body class="index-page">
+<body class="index-page dark-background">
 
     <!-- <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -136,7 +129,7 @@
                     <div class="col-lg-8 d-flex align-items-stretch">
                         <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
-                            <div class="col-xl-4">
+                            <div class="col-xl-4 box-wh">
                                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                                     <i class="bi bi-clipboard-data"></i>
                                     <h4>Corporis voluptates officia eiusmod</h4>
@@ -144,7 +137,7 @@
                                 </div>
                             </div><!-- End Icon Box -->
 
-                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="col-xl-4 box-wh" data-aos="fade-up" data-aos-delay="300">
                                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                                     <i class="bi bi-gem"></i>
                                     <h4>Ullamco laboris ladore lore pan</h4>
@@ -152,7 +145,7 @@
                                 </div>
                             </div><!-- End Icon Box -->
 
-                            <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="col-xl-4 box-wh" data-aos="fade-up" data-aos-delay="400">
                                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                                     <i class="bi bi-inboxes"></i>
                                     <h4>Labore consequatur incidid dolore</h4>
@@ -181,28 +174,28 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item text-center w-100 h-100">
                             <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Clients</p>
+                            <p class="stats-p">Clients</p>
                         </div>
                     </div><!-- End Stats Item -->
 
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item text-center w-100 h-100">
                             <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Projects</p>
+                            <p class="stats-p">Projects</p>
                         </div>
                     </div><!-- End Stats Item -->
 
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item text-center w-100 h-100">
                             <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Hours Of Support</p>
+                            <p class="stats-p">Hours Of Support</p>
                         </div>
                     </div><!-- End Stats Item -->
 
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-item text-center w-100 h-100">
                             <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Workers</p>
+                            <p class="stats-p">Workers</p>
                         </div>
                     </div><!-- End Stats Item -->
 
@@ -609,9 +602,7 @@
             </div>
 
         </section><!-- /Gallery Section -->
-
-
-
+       
     </main>
 
     <?php include 'footer.php'; ?>
@@ -620,8 +611,11 @@
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+
+
     <!-- Preloader -->
     <div id="preloader"></div>
+  
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -633,6 +627,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
 
 </body>
 

@@ -1,11 +1,6 @@
-<style>
-    .dark-background{
-        background-color: black;
-        color: aliceblue;
-    }
-</style>
 
-<footer id="footer" class="footer ">
+
+<footer id="footer" class="footer">
 
     <div class="container">
         <div class="row gy-3">
@@ -81,11 +76,15 @@
         if (isDarkMode) {
             document.body.classList.remove('dark-background');
             document.body.classList.add('light-background');
+            document.getElementById('footer').classList.remove('dark-background');
+            document.getElementById('footer').classList.add('light-background');
             modeIcon.classList.remove('bi-moon');
             modeIcon.classList.add('bi-sun');
         } else {
             document.body.classList.remove('light-background');
             document.body.classList.add('dark-background');
+            document.getElementById('footer').classList.remove('light-background');
+            document.getElementById('footer').classList.add('dark-background');
             modeIcon.classList.remove('bi-sun');
             modeIcon.classList.add('bi-moon');
         }

@@ -11,6 +11,9 @@
 <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
 <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/cdb/cdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
 
 <!-- Main JS File -->
 <script src="../assets/js/main.js"></script>

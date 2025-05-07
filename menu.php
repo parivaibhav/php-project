@@ -26,18 +26,7 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <style>
-        .dark-background {
-            background-color: black;
-            color: white;
-        }
-
-        .light-background {
-            background-color: white;
-            color: black;
-        }
-    </style>
-
+    <script src="assets/js/modetoggle.js" defer></script>
 </head>
 
 
@@ -520,6 +509,8 @@
 
         <!-- Main JS File -->
         <script src="assets/js/main.js"></script>
+
+     
 
     </body>
 

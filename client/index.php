@@ -1,4 +1,37 @@
-<?php include 'tophtml.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Project</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="../assets/img/logo.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+
+    <script src="../assets/js/modetoggle.js" defer></script>
+
+
+</head>
 
 <body class="index-page">
 
@@ -12,14 +45,15 @@
                 <div class="row gy-4 justify-content-center justify-content-lg-between">
                     <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
                         <h1 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
-                        <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
+                        <!---->
+                        <p data-aos-delay="100" data-aos="fade-up">Savor authentic flavors at Darshan Restaurant, where every dish is crafted with fresh ingredients, bold spices, and timeless recipes.</p>
                         <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
                             <a href="#book-a-table" class="btn-get-started">Booka a Table</a>
                             <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
                         </div>
                     </div>
                     <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+                        <img src="../assets/img/hero-img.png" class="img-fluid animated rounded" alt="">
                     </div>
                 </div>
             </div>
@@ -295,7 +329,7 @@
                     </script>
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
+                        <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(../assets/img/events-1.jpg)">
                             <h3>Custom Parties</h3>
                             <div class="price align-self-start">$99</div>
                             <p class="description">
@@ -303,7 +337,7 @@
                             </p>
                         </div><!-- End Event item -->
 
-                        <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
+                        <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(../assets/img/events-2.jpg)">
                             <h3>Private Parties</h3>
                             <div class="price align-self-start">$289</div>
                             <p class="description">
@@ -311,7 +345,7 @@
                             </p>
                         </div><!-- End Event item -->
 
-                        <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
+                        <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(../assets/img/events-3.jpg)">
                             <h3>Birthday Parties</h3>
                             <div class="price align-self-start">$499</div>
                             <p class="description">
@@ -319,7 +353,7 @@
                             </p>
                         </div><!-- End Event item -->
 
-                        <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-4.jpg)">
+                        <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(../assets/img/events-4.jpg)">
                             <h3>Wedding Parties</h3>
                             <div class="price align-self-start">$899</div>
                             <p class="description">
@@ -424,9 +458,9 @@
 
                 <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
 
-                    <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
+                    <div class="col-lg-4 reservation-img" style="background-image: url(../assets/img/reservation.jpg);"></div>
 
-                    <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-8 d-flex align-items-center reserv../ation-form-bg" data-aos="fade-up" data-aos-delay="200">
                         <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
                             <div class="row gy-4">
                                 <div class="col-lg-4 col-md-6">
@@ -511,14 +545,14 @@
                         }
                     </script>
                     <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="../assets/img/gallery/gallery-1.jpg"><img src="../assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="../assets/img/gallery/gallery-2.jpg"><img src="../assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="../assets/img/gallery/gallery-3.jpg"><img src="../assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="../assets/img/gallery/gallery-4.jpg"><img src="../assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="../assets/img/gallery/gallery-5.jpg"><img src="../assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="../assets/img/gallery/gallery-6.jpg"><img src="../assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="../assets/img/gallery/gallery-7.jpg"><img src="../assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="../assets/img/gallery/gallery-8.jpg"><img src="../assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -533,4 +567,29 @@
 
     <?php include 'footer.php'; ?>
 
-    <?php include 'endhtml.php'; ?>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -26,17 +26,9 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <style>
-        .dark-background {
-            background-color: black;
-            color: white;
-        }
 
-        .light-background {
-            background-color: white;
-            color: black;
-        }
-    </style>
+    
+    <script src="assets/js/modetoggle.js" defer></script>
 
 </head>
 
@@ -45,7 +37,7 @@
 
 
 <body>
-<?php include 'header.php'; ?>
+    <?php include 'header.php'; ?>
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
