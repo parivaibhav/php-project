@@ -1,35 +1,31 @@
-<header id="header" class="header d-flex align-items-center sticky-top  " id="main-navbar">
-    <div class="container position-relative d-flex align-items-center justify-content-between ">
+<!-- Wrapper div with mx-3 for 30px left/right margin (approx) -->
+<div class="mx-3">
+    <header class="header d-flex align-items-center  position-fixed shadow-sm rounded-pill px-3 my-3 border border-danger border-3 w-100" style="max-width: calc(100% - 60px); left: 30px; right: 30px;">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
 
-        <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0" >
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1 class="sitename">Darshan Restaurant</h1>
-        </a>
+            <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
+                <h1 class="sitename d-none d-sm-flex">Darshan Restaurant</h1>
+            </a>
 
-        <nav id="navmenu" class="navmenu mx-auto " >
-            <ul>
-                <li><a href="index.php" class="active">Home<br></a></li>
-                <li><a href="aboutus.php">About</a></li>
-                <li><a href="menu.php">Menu</a></li>
-                <li><a href="index.php#events">Events</a></li>
-                <li><a href="index.php#chefs">Chefs</a></li>
-                <li><a href="contactus.php">Contact</a></li>
-                <li>
-                    <div class="d-flex flex-sm-column gap-3 d-lg-none btn-group-lg px-3">
+            <nav id="navmenu" class="navmenu mx-auto">
+                <ul>
+                    <li><a href="index.php" class="nav-link link-offset-2">Home</a></li>
+                    <li><a href="aboutus.php" class="nav-link">About</a></li>
+                    <li><a href="menu.php" class="nav-link">Menu</a></li>
+                    <li><a href="contactus.php" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
 
-                        <a class="btn btn-primary text-white" href="login.php">Login</a>
-                    </div>
-        </nav>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </div>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list text-black"></i>
+        </div>
 
-    <div class="d-none flex gap-3 d-lg-flex px-2  ">
+        <!-- Theme toggle and login -->
+        <div class=" d-flex align-items-center gap-3 px-2">
+            <a id="theme-toggle" class="bg-transparent  rounded-circle shadow-lg" href="javascript:void(0)" onclick="toggleTheme()" style="z-index: 100; position: fixed; bottom:80px; right: 15px;">
+                <i id="icon" class="bi bi-sun text-white bg-dark rounded-circle  " style="padding:15px;"></i>
+            </a>
+            <a class="login-btn btn btn-danger" href="login.php">Login</a>
+        </div>
+    </header>
 
-        <a  id="theme-toggle" class=" bg-transparent position-fixed bottom-0 end-0 m-4" >
-            <i id="icon" class="bi bi-sun text-white bg-dark rounded-circle "></i>
-        </a>
-        <a class="login-btn" href="login.php">Login</a>
-
-    </div>
-</header>
+</div>

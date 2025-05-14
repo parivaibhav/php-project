@@ -1,7 +1,4 @@
-
-
-
-<footer id="footer" class="footer ">
+<footer id="footer" class="footer shadow-lg rounded-3 mt-5">
 
     <div class="container">
         <div class="row gy-3">
@@ -9,11 +6,10 @@
                 <i class="bi bi-geo-alt icon"></i>
                 <div class="address">
                     <h4>Address</h4>
-                    <p>Veraval Road</p>
-                    <p>Keshod, Gujrat 362220</p>
+                    <p>Veraval Rd, opp. Icici Bank</p>
+                    <p>Keshod, Gujarat 362220</p>
                     <p></p>
                 </div>
-
             </div>
 
             <div class="col-lg-3 col-md-6 d-flex">
@@ -56,5 +52,5 @@
             Designed and Devloped by <a href="https://github.com/parivaibhav" class="">Pari Vaibhav</a>
         </div>
     </div>
-
+  
 </footer>

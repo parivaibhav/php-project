@@ -84,9 +84,9 @@
     <main class="main">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section">
+        <section id="hero" class="hero section" >
 
-            <div class="container">
+            <div class="container" style="margin-top: 100px !important;">
                 <div class="row gy-4 justify-content-center justify-content-lg-between">
                     <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
                         <h1 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
@@ -110,7 +110,6 @@
         <section id="why-us" class="why-us section">
 
             <div class="container">
-
                 <div class="row gy-4">
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
@@ -559,9 +558,9 @@
                     <script type="application/json" class="swiper-config">
                         {
                             "loop": true,
-                            "speed": 600,
+                            "speed": 400,
                             "autoplay": {
-                                "delay": 5000
+                                "delay": 1000
                             },
                             "slidesPerView": "auto",
                             "centeredSlides": true,
@@ -580,29 +579,35 @@
                                     "spaceBetween": 20
                                 },
                                 "1200": {
-                                    "slidesPerView": 5,
+                                    "slidesPerView": 7,
                                     "spaceBetween": 20
                                 }
                             }
                         }
                     </script>
                     <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-9.jpg"><img src="assets/img/gallery/gallery-9.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-10.jpg"><img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-11.jpg"><img src="assets/img/gallery/gallery-11.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-12.jpeg"><img src="assets/img/gallery/gallery-12.jpeg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-13.jpeg"><img src="assets/img/gallery/gallery-13.jpeg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-14.jpeg"><img src="assets/img/gallery/gallery-14.jpeg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
+                        <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-16.jpg"><img src="assets/img/gallery/gallery-16.jpg" class="img-fluid" style="width: 600px; height: 200px; object-fit: cover;" alt=""></a></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-
             </div>
 
         </section><!-- /Gallery Section -->
-       
+
     </main>
 
     <?php include 'footer.php'; ?>
@@ -614,8 +619,10 @@
 
 
     <!-- Preloader -->
-    <div id="preloader"></div>
-  
+    <!-- <div id="preloader"></div> -->
+
+
+
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

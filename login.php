@@ -31,10 +31,11 @@
 
 </head>
 
-<body>
+<body class="dark-background">
     <?php include 'header.php'; ?>
-    <div class="container border border-3  border-light-subtle my-3 rounded-3" style="padding: 90px;">
-        <h1 class="text-center py-2">Login in Your Account</h1>
+
+    <div class="container border border-3  border-light-subtle my-3 rounded-3" style="margin-top: 100px; padding: 30px;">
+        <h1 class="text-center py-2" >Login in Your Account</h1>
         <form action="includes/login.php" method="post">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label ">Email address</label>
@@ -53,7 +54,7 @@
     <?php include 'footer.php'; ?>
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-   
+
     <!-- Preloader -->
     <div id="preloader"></div>
 
@@ -67,7 +68,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
-    
+
 
 </body>
 

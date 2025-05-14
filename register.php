@@ -34,7 +34,7 @@
 
 
 
-<body>
+<body class="dark-background">
     <?php include 'header.php'; ?>
     <div class="container border border-3  border-light-subtle my-3 rounded-3" style="padding: 90px;">
         <h1 class="text-center py-2 ">Register Your Account</h1>

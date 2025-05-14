@@ -1,36 +1,62 @@
 @font-face {
-  font-family: "Amarillo";
+  font-family: "Amrillo";
   src: url("../fonts/Amarillo.ttf");
 }
+
+
+
+
+
+
+/* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Amatic SC", sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Arial", sans-serif;
   --nav-font: "Inter", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  /* --background-color: #ffffff; Background color for the entire website, including individual sections */
-  --default-color: #9f9f9f; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #616161; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ce1212; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #212529;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #37373f;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ce1212;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --font-name: "font4" !important;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: #7f7f90; /* The default color of the main navmenu links */
-  --nav-hover-color: #ce1212; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #7f7f90; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ce1212; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f2f2f2;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #1f1f24;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #37373f;
+  --contrast-color: #ffffff;
+}
+
+.dark-background .header {
+  --background-color: #1f1f24;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #37373f;
+  --contrast-color: #ffffff;
+}
 
 /* Smooth scroll */
 :root {
@@ -43,13 +69,15 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
+  font: var(--font-name);
+
 }
 
 a {
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
+  font-family: var(--font-name);
 }
 
 a:hover {
@@ -72,14 +100,12 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(
-    var(--accent-color) 50%,
-    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
-  );
+  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
   overflow: hidden;
+  font-family: var(--heading-font) !important;
 }
 
 .pulsating-play-btn:before {
@@ -205,6 +231,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
+
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
@@ -232,6 +259,7 @@ h6 {
 .header .logo span {
   color: var(--accent-color);
   font-size: 36px;
+  font-family: var(--heading-font);
 }
 
 .header .btn-getstarted,
@@ -292,12 +320,12 @@ h6 {
     position: relative;
   }
 
-  .navmenu > ul > li {
+  .navmenu>ul>li {
     white-space: nowrap;
     padding: 15px 14px;
   }
 
-  .navmenu > ul > li:last-child {
+  .navmenu>ul>li:last-child {
     padding-right: 0;
   }
 
@@ -324,7 +352,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu > ul > li > a:before {
+  .navmenu>ul>li>a:before {
     content: "";
     position: absolute;
     height: 2px;
@@ -337,13 +365,13 @@ h6 {
   }
 
   .navmenu a:hover:before,
-  .navmenu li:hover > a:before,
+  .navmenu li:hover>a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
   }
 
-  .navmenu li:hover > a,
+  .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
     color: color-mix(in srgb, var(--nav-color) 80%, black 50%);
@@ -382,11 +410,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover > a {
+  .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover > ul {
+  .navmenu .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -398,7 +426,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover > ul {
+  .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -415,6 +443,7 @@ h6 {
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s;
+
   }
 
   .navmenu {
@@ -500,13 +529,14 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown > .dropdown-active {
+  .navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
 
   .mobile-nav-active {
     overflow: hidden;
+    background-color: #e8e8e8 !important;
   }
 
   .mobile-nav-active .mobile-nav-toggle {
@@ -523,11 +553,11 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu > ul {
+  .mobile-nav-active .navmenu>ul {
     display: block;
   }
 }
@@ -536,13 +566,12 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  --heading-font: var(--default-font);
+  font-family: "Inter", var(--nav-font);
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
   padding: 40px 0;
   position: relative;
-  box-shadow: 1px -10px 10px -1px rgba(205, 15, 15, 0.38);
 }
 
 .footer .icon {
@@ -551,6 +580,8 @@ h6 {
   font-size: 24px;
   line-height: 0;
 }
+
+
 
 .footer h4 {
   font-size: 16px;
@@ -583,8 +614,7 @@ h6 {
 
 .footer .copyright {
   padding-top: 20px;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -648,8 +678,8 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 85px;
-  bottom: -95px;
+  right: 15px;
+  bottom: -15px;
   z-index: 99999;
   background-color: var(--accent-color);
   width: 44px;
@@ -714,11 +744,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li + li {
+.page-title .breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li + li::before {
+.page-title .breadcrumbs ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -738,6 +768,7 @@ section,
 }
 
 @media (max-width: 1199px) {
+
   section,
   .section {
     scroll-margin-top: 56px;
@@ -790,6 +821,7 @@ section,
 }
 
 .hero h1 {
+  font-family: "Amatic SC", var(--heading-font);
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -800,6 +832,7 @@ section,
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
+  font-family: "Inter", var(--nav-font);
 }
 
 .hero .btn-get-started {
@@ -813,6 +846,7 @@ section,
   border-radius: 50px;
   transition: 0.5s;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", var(--nav-font);
 }
 
 .hero .btn-get-started:hover {
@@ -827,6 +861,7 @@ section,
   margin-left: 25px;
   color: var(--default-color);
   font-weight: 500;
+  font-family: "Inter", var(--nav-font);
 }
 
 .hero .btn-watch-video i {
@@ -944,11 +979,12 @@ section,
   color: var(--contrast-color);
   background: var(--accent-color);
   padding: 30px;
+  font-family: "Inter", var(--nav-font);
 }
 
 .why-us .why-box h3 {
   color: var(--contrast-color);
-  font-family: var(--default-font);
+  font-family: "Inter", var(--nav-font);
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
@@ -956,6 +992,7 @@ section,
 
 .why-us .why-box p {
   margin-bottom: 30px;
+  font-family: "Inter", var(--nav-font);
 }
 
 .why-us .why-box .more-btn {
@@ -965,10 +1002,12 @@ section,
   color: var(--contrast-color);
   transition: all ease-in-out 0.4s;
   border-radius: 50px;
+  font-family: "Inter", var(--nav-font);
 }
 
 .why-us .why-box .more-btn i {
   font-size: 14px;
+
 }
 
 .why-us .why-box .more-btn:hover {
@@ -1001,14 +1040,15 @@ section,
 
 .why-us .icon-box h4 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 30px 0;
-  font-family: var(--default-font);
+
 }
 
 .why-us .icon-box p {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-family: "Inter", var(--nav-font);
 }
 
 .why-us .icon-box:hover i {
@@ -1084,8 +1124,7 @@ section,
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 2px solid
-    color-mix(in srgb, var(--default-color), transparent 80%);
+  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 @media (max-width: 575px) {
@@ -1431,6 +1470,7 @@ section,
 
 .book-a-table .php-email-form {
   padding: 30px;
+  font-family: "Inter", var(--nav-font);
 }
 
 @media (max-width: 575px) {
@@ -1450,11 +1490,7 @@ section,
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 20%
-  );
+  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -1482,7 +1518,7 @@ section,
   border: 0;
   padding: 14px 60px;
   transition: 0.4s;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .book-a-table .php-email-form button[type="submit"]:hover {
@@ -1565,7 +1601,7 @@ section,
   font-weight: 700;
   margin: 0 0 5px 0;
   font-family: var(--default-font);
-  /* color: color-mix(in srgb, var(--default-color), transparent 30%); */
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
 .contact .info-item p {
@@ -1603,9 +1639,9 @@ section,
 .contact .php-email-form input[type="text"],
 .contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
-  color: /*var(--default-color)*/ #ce1212;
+  color: var(--default-color);
   background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
@@ -1640,110 +1676,89 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background: #121212;
-  color: white;
-}
 
-/* Optional: Icon Style */
-#theme-toggle {
-  background-color: #fff;
-  cursor: pointer;
-}
-
-/* Optional: Improve button visibility in dark mode */
-body.dark-mode #theme-toggle {
-  background-color: #333;
-  color: white;
-}
-
-body.dark-mode #theme-toggle i {
-  color: white; /* Change icon color in dark mode */
-}
-
-#theme-toggle i {
-  /* padding:10px 12px; */
-}
-input::placeholder,
-textarea::placeholder {
-  color: #6c757d; /* Bootstrap default placeholder color */
-}
-
-body.dark-mode input::placeholder,
-body.dark-mode textarea::placeholder {
-  color: #004285 !important; /* Lighter color for dark backgrounds */
-}
-
-input,
-textarea {
-  border-radius: 10px !important;
-}
-
-body.dark-mode input:hover,
-textarea:hover {
-  border-color: #059652 !important;
-}
-
-body.dark-mode .php-email-form {
-  background-color: #676767;
-}
-
-body.dark-mode header {
-  background-color: #121212 !important;
-}
-
-body header {
-  background-color: #fff !important;
+.bi-x {
+  font-size: 40px;
+  color: var(--default-color);
+  line-height: 0;
+  margin-left: calc(100% - 50px);
+  margin-bottom: 30px;
 }
 
 .sitename {
-  font-family: "Amarillo" !important;
-  font-size: medium !important;
-  color: crimson !important;
-}
-
-body.dark-mode .purecounter {
-  color: #111 !important;
-}
-body.dark-mode .stats-p {
-  color: #434343 !important;
-}
-
-/* .box-wh{
-  background-color: #121212 !important;
-} */
-
-body.dark-mode a .login-btn {
-  padding: 17px 40px !important;
-  border-radius: 10px !important;
-  border: 0 !important;
-  background-color: rgb(255, 56, 86) !important;
-  letter-spacing: 1.5px !important;
+  font-family: "Amrillo" !important;
   font-size: 15px !important;
-  transition: all 0.3s ease !important;
-  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px !important;
-  color: hsl(0, 0%, 100%) !important;
-  cursor: pointer !important;
+  color: #df1529 !important;
 }
 
-body.dark-mode a .login-btn:hover {
-  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px !important;
+.dark-background .navmenu a {
+  color: #484848 !important;
 }
 
-body.dark-mode .login-btn:active {
-  background-color: rgb(255, 56, 86) !important;
-  /*50, 168, 80*/
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px !important;
-  transform: translateY(5px) !important;
-  transition: 200ms !important;
+
+.dark-background .navmenu .dropdown ul a:hover {
+  background-color: #e8e8e8 !important;
 }
 
-body.dark-mode header {
-  box-shadow: #9f9f9f 10px 0.3px 0.8px 0px !important;
+.dark-background .navmenu .dropdown ul a::before,
+.dark-background .navmenu .dropdown ul a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e8e8e8 !important;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+
 }
 
+.dark-background .navmenu .dropdown ul a:hover::before,
+.dark-background .navmenu .dropdown ul a:hover::after {
+  opacity: 1;
+  z-index: -1;
+}
+
+.dark-background .bi-list {
+  color: #ffffff !important;
+}
+
+.hero-h1 h1 {
+  font-family: "Amatic SC" !important;
+}
+
+.login-btn {
+  font-family: "Inter", var(--nav-font);
+
+}
+
+.dark-background table {
+  background-color: #e8e8e8 !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
+table {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
+.lgout-btn {
+  font-size: 15px;
+  font-family: "Inter", var(--nav-font);
+  width: 100px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background: #df1529 !important;
+  color: #fff !important;
+  transition: all 0.3s ease-in-out;
+}

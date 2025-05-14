@@ -57,40 +57,5 @@
     </div>
     <div class="dark-background d-flex align-items-center justify-content-center"></div>
 </footer>
-
-<script>
-    // Toggle between light and dark mode
-    const toggleMode = document.createElement('div');
-    toggleMode.style.position = 'fixed';
-    toggleMode.style.bottom = '20px';
-    toggleMode.style.right = '20px';
-    toggleMode.style.cursor = 'pointer';
-    toggleMode.style.zIndex = '1000';
-    toggleMode.innerHTML = '<i class="bi bi-moon  bg-white text-black" id="mode-icon" style="font-size: 24px;padding:8px 10px; border-radius:50%;"></i>';
-    document.body.appendChild(toggleMode);
-
-    const modeIcon = document.getElementById('mode-icon');
-    let isDarkMode = true;
-
-    toggleMode.addEventListener('click', () => {
-        if (isDarkMode) {
-            document.body.classList.remove('dark-background');
-            document.body.classList.add('light-background');
-            document.getElementById('footer').classList.remove('dark-background');
-            document.getElementById('footer').classList.add('light-background');
-            modeIcon.classList.remove('bi-moon');
-            modeIcon.classList.add('bi-sun');
-        } else {
-            document.body.classList.remove('light-background');
-            document.body.classList.add('dark-background');
-            document.getElementById('footer').classList.remove('light-background');
-            document.getElementById('footer').classList.add('dark-background');
-            modeIcon.classList.remove('bi-sun');
-            modeIcon.classList.add('bi-moon');
-        }
-        isDarkMode = !isDarkMode;
-    });
-
-    // Initial mode setup
-    document.body.classList.add('dark-background');
-</script>
+    
+    

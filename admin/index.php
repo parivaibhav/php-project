@@ -38,8 +38,7 @@ $useremail = $_SESSION['email'];
 
     <!-- Main CSS File -->
     <link href="../assets/css/main.css" rel="stylesheet">
-
-
+    <script src="../assets/js/modetoggle.js" defer></script>
 </head>
 
 <body class="index-page dark-background">
@@ -52,5 +51,26 @@ $useremail = $_SESSION['email'];
 
     <?php include 'footer.php'; ?>
 </body>
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<?php include 'endhtml.php'; ?>
+<!-- Preloader -->
+<!--<div id="preloader"></div>-->
+
+<!-- Vendor JS Files -->
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/php-email-form/validate.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/cdb/cdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
+
+<!-- Main JS File -->
+<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -24,7 +24,6 @@
     document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
-   
   }
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
@@ -170,4 +169,13 @@
 })();
 
 let addCartButton = document.querySelectorAll(".addCart");
+
+let logoutUser = document.querySelector("#logoutUser");
+
+logoutUser.addEventListener("click", function () {
+  let logout = confirm("Are you sure you want to logout?");
+  if (logout) {
+    window.location.href = "../includes/logout.php";
+  }
+});
 

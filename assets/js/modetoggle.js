@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Set initial theme
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme === "dark") {
-        document.body.classList.add("dark-mode");
+        document.body.classList.add("dark-background");
 
         icon.classList.replace("bi-sun", "bi-moon");
     } else {
@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Toggle theme on button click
     toggleBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-        const isDark = document.body.classList.contains("dark-mode");
+        document.body.classList.toggle("dark-background");
+        const isDark = document.body.classList.contains("dark-background");
         localStorage.setItem("theme", isDark ? "dark" : "light");
+        document.body.classList.toggle("light-background", !isDark);
 
         // Toggle icon
         if (isDark) {
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const applyTheme = (theme) => {
         const isDark = theme === "dark";
-        document.body.classList.toggle("dark-mode", isDark);
+        document.body.classList.toggle("dark-background", isDark);
         icon.classList.replace(isDark ? "bi-sun" : "bi-moon", isDark ? "bi-moon" : "bi-sun");
 
         // Toggle Bootstrap navbar classes
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     applyTheme(savedTheme);
 
     toggleBtn.addEventListener("click", () => {
-        const newTheme = document.body.classList.contains("dark-mode") ? "light" : "dark";
+        const newTheme = document.body.classList.contains("dark-background") ? "light" : "dark";
         localStorage.setItem("theme", newTheme);
         applyTheme(newTheme);
     });

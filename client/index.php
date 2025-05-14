@@ -33,18 +33,18 @@
 
 </head>
 
-<body class="index-page">
+<body class="index-page dark-background">
 
     <?php include 'header.php'; ?>
-    <main class="main">
+    <main class="main ">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section light-background">
+        <section id="hero" class="hero section ">
 
             <div class="container">
                 <div class="row gy-4 justify-content-center justify-content-lg-between">
                     <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                        <h1 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
+                        <h1 class="hero-h1" data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
                         <!---->
                         <p data-aos-delay="100" data-aos="fade-up">Savor authentic flavors at Darshan Restaurant, where every dish is crafted with fresh ingredients, bold spices, and timeless recipes.</p>
                         <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -63,12 +63,9 @@
 
 
         <!-- Why Us Section -->
-        <section id="why-us" class="why-us section light-background">
-
+        <section id="why-us" class="why-us section ">
             <div class="container">
-
                 <div class="row gy-4">
-
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="why-box">
                             <h3>Why Choose Yummy</h3>
@@ -108,18 +105,14 @@
                                     <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                                 </div>
                             </div><!-- End Icon Box -->
-
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
         </section><!-- /Why Us Section -->
 
         <!-- Stats Section -->
-        <section id="stats" class="stats section dark-background">
+        <section id="stats" class="stats section ">
 
             <img src="../assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
 
@@ -164,7 +157,7 @@
 
 
         <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section light-background">
+        <section id="testimonials" class="testimonials section ">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
@@ -503,7 +496,7 @@
         </section><!-- /Book A Table Section -->
 
         <!-- Gallery Section -->
-        <section id="gallery" class="gallery section light-background">
+        <section id="gallery" class="gallery section ">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
