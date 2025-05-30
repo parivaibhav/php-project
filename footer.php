@@ -51,7 +51,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span><strong class="px-1 sitename">Darshan Hotel</strong><span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span><strong class="px-1 sitename ">Darshan Restaurant</strong><span>All Rights Reserved</span></p>
         <div class="credits">
             Designed and Devloped by <a href="https://github.com/parivaibhav" class="">Pari Vaibhav</a>
         </div>

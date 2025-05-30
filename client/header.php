@@ -9,14 +9,15 @@
 
         <nav id="navmenu" class="navmenu mx-auto ">
             <ul>
-                <li><a href="index.php" class="active">Home<br></a></li>
+                <li><a href="index.php" >Home<br></a></li>
                 <li><a href="aboutus.php">About</a></li>
                 <li><a href="menu.php">Menu</a></li>
                 <!-- <li><a href="index.php#events">Events</a></li>
                 <li><a href="index.php#chefs">Chefs</a></li> -->
                 <li><a href="contactus.php">Contact</a></li>
-                <li>
-                   
+                <li><a href="myorder.php">my oroder</a></li>
+
+
         </nav>
         <i class="mobile-nav-toggle d-xl-none bi bi-list mb-3"></i>
     </div>

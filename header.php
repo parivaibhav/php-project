@@ -9,11 +9,10 @@
 
         <nav id="navmenu" class="navmenu mx-auto " >
             <ul>
-                <li><a href="index.php" class="active">Home<br></a></li>
+                <li><a href="index.php" >Home<br></a></li>
                 <li><a href="aboutus.php">About</a></li>
                 <li><a href="menu.php">Menu</a></li>
-                <li><a href="index.php#events">Events</a></li>
-                <li><a href="index.php#chefs">Chefs</a></li>
+           
                 <li><a href="contactus.php">Contact</a></li>
                 <li>
                     <div class="d-flex flex-sm-column gap-3 d-lg-none btn-group-lg px-3">

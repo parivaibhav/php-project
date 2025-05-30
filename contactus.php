@@ -27,7 +27,35 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
-    
+    <style>
+        .feedback-form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-label {
+            font-weight: 500;
+        }
+
+        .rating input[type="radio"] {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 1.5rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .rating input:checked~label,
+        .rating label:hover,
+        .rating label:hover~label {
+            color: #ffc107;
+        }
+    </style>
     <script src="assets/js/modetoggle.js" defer></script>
 
 </head>
@@ -97,35 +125,57 @@
 
             </div>
 
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
-                <div class="row gy-4">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form action="./includes/feedback_form.php" method="post" class="needs-validation feedback-form" novalidate>
+                            <h2 class="mb-4 text-center">We Value Your Feedback</h2>
 
-                    <div class="col-md-6">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required />
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="you@example.com" required />
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="form-label">Rate Your Experience</label>
+                                    <div class="rating d-flex justify-content-center">
+                                        <input type="radio" name="rating" id="star1" value="1" />
+                                        <label for="star1" title="1 star">★</label>
+                                        <input type="radio" name="rating" id="star2" value="2" />
+                                        <label for="star2" title="2 stars">★</label>
+                                        <input type="radio" name="rating" id="star3" value="3" />
+                                        <label for="star3" title="3 stars">★</label>
+                                        <input type="radio" name="rating" id="star4" value="4" />
+                                        <label for="star4" title="4 stars">★</label>
+                                        <input type="radio" name="rating" id="star5" value="5" required />
+                                        <label for="star5" title="5 stars">★</label>
+                                    </div>
+                                    <div class="invalid-feedback d-block text-center mt-2">Please rate your experience.</div>
+                                </div>
+                                <div class="rater"></div>
+
+                                <div class="col-md-12">
+                                    <label for="comments" class="form-label">Your Feedback</label>
+                                    <textarea name="comments" id="comments" class="form-control" rows="5" placeholder="What did you love? What can we improve?" required></textarea>
+                                    <div class="invalid-feedback">Please share your feedback.</div>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-danger px-5">Submit </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="col-md-6 ">
-                        <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                    </div>
-
-                    <div class="col-md-12">
-                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                    </div>
-
-                    <div class="col-md-12">
-                        <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                    </div>
-
-                    <div class="col-md-12 text-center">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                        <button type="submit">Send Message</button>
-                    </div>
-
                 </div>
-            </form><!-- End Contact Form -->
+            </div><!-- End Contact Form -->
 
         </div>
 
@@ -149,7 +199,25 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/formvalidation.js"></script>
+    <script src="assets/vendor/sweetalert/sweetalert.js"></script>
 
+    <script>
+        <?php if (isset($_SESSION['status']) && isset($_SESSION['msg'])): ?>
+            Swal.fire({
+                icon: '<?= $_SESSION['status'] === 'success' ? 'success' : 'error' ?>',
+                title: '<?= $_SESSION['status'] === 'success' ? 'Thank You!' : 'Oops!' ?>',
+                text: '<?= addslashes($_SESSION['msg']) ?>',
+                confirmButtonColor: '<?= $_SESSION['status'] === 'success' ? '#198754' : '#dc3545' ?>'
+            });
+        <?php
+            unset($_SESSION['status']);
+            unset($_SESSION['msg']);
+        endif;
+        ?>
+    </script>
+   
+    
 </body>
 
 </html>
